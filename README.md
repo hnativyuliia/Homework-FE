@@ -1,1 +1,1 @@
-View my Pages via the [link](https://https://hnativyuliia.github.io/Homework-FE/)
+View my Homeworks via the [link](https://https://hnativyuliia.github.io/Homework-FE/)
