@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denis Novik CV</title>
+    <style>
+      .gray {
+        opacity: 0.3;
+      }
+    </style>
+
+    <style>
+.container {
+    width: 95%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+    </style>
   </head>
   <body>
     <header>
@@ -16,41 +30,159 @@
       </ul>
     </header>
 
-    <section>
+
+    <div class="first">
+        <div class="container">
       <h1><b>Denis Novik</b></h1>
       <img src="/HW_3/assets/img/denis_novik.jpg" />
-    </section>
+    </div>
+    </div>
 
-    <section id="home">
+    <div class="container">
+    <section id="about me">
+
       <h2>About me</h2>
-      <div>
+      <p>
         Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and
         everything connected with it.
-      </div>
-      <div>
+      </p>
+      <p>
         I'm studying at courses "Web and mobile design interfaces" in
         IT-Academy.
-      </div>
-      <div>Ready to implement excellent projects with wonderful people.</div>
+      </p>
+      <p>Ready to implement excellent projects with wonderful people.</p>
     </section>
 
-    <section id="about_me"></section>
-
+    
     <section id="skills">
-      <h2>Skills</h2>
-      <div>I work in such programs as</div>
+      <hgroup>
+        <h2>Skills</h2>
+        <div>I work in such programs as</div>
+      </hgroup>
 
-      <div>Adobe Photoshop</div>
-      <div>Adobe Illustrator</div>
-      <div>Adobe After Effects</div>
-      <div>Figma</div>
+      <ul>
+        <li>
+          <figure>
+            <img
+              src="/HW_3/assets/img/photoshop.svg"
+              alt="image of adobe photoshop"
+            />
+            <figcaption>Photoshop</figcaption>
+          </figure>
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img
+            src="/HW_3/assets/img/star-icon.svg"
+            alt="star icon"
+            class="gray"
+          />
+          <img
+            src="/HW_3/assets/img/star-icon.svg"
+            alt="star icon"
+            class="gray"
+          />
+          <img
+            src="/HW_3/assets/img/star-icon.svg"
+            alt="star icon"
+            class="gray"
+          />
+        </li>
+
+        <li>
+          <figure>
+            <img
+              src="/HW_3/assets/img/abode_ill.svg"
+              alt="image of adobe illustrator"
+            />
+            <figcaption>Adobe Illustrator</figcaption>
+          </figure>
+
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img
+            src="/HW_3/assets/img/star-icon.svg"
+            alt="star icon"
+            class="gray"
+          />
+          <img
+            src="/HW_3/assets/img/star-icon.svg"
+            alt="star icon"
+            class="gray"
+          />
+        </li>
+
+        <li>
+          <figure>
+            <img
+              src="/HW_3/assets/img/adobe_after_effects.svg"
+              alt="image of adobe effects"
+            />
+            <figcaption>Adobe After Effects</figcaption>
+          </figure>
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img
+            src="/HW_3/assets/img/star-icon.svg"
+            alt="star icon"
+            class="gray"
+          />
+        </li>
+
+        <li>
+          <figure>
+            <img src="/HW_3/assets/img/Figma.svg" alt="image of Figma" />
+            <figcaption>Figma</figcaption>
+          </figure>
+
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+          <img src="/HW_3/assets/img/star-icon.svg" alt="star icon" />
+        </li>
+      </ul>
     </section>
 
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <a href="#">Online fashion store - Homepage</a>
-      <a href="#">Reebok Store - Concept</a>
-      <a href="#">Braun Landing Page - Concept</a>
+      <ul>
+        <li>
+          <img
+            src="/HW_3/assets/img/Fashion-Store.jpg"
+            alt="fasion store photo"
+          />
+          <div>
+            <a href="#" rel="noopener noreferrer nofollow"
+              >Online fashion store - Homepage</a
+            >
+          </div>
+        </li>
+        <li>
+          <img
+            src="/HW_3/assets/img/reebok_web.jpg"
+            alt="photo of reebok website"
+          />
+          <div>
+            <a href="#" rel="noopener noreferrer nofollow"
+              >Reebok Store - Concept</a
+            >
+          </div>
+        </li>
+        <li>
+          <img
+            src="/HW_3/assets/img/braun-landing.jpg"
+            alt="photo of braun website"
+          />
+          <div>
+            <a href="#" rel="noopener noreferrer nofollow"
+              >Braun Landing Page - Concept</a
+            >
+          </div>
+        </li>
+      </ul>
     </section>
   </body>
 
@@ -59,7 +191,8 @@
       <h2>Contacts</h2>
       <div>Want to know more or just chat?</div>
       <div>You are welcome!</div>
+
+      <div>Like me on LinkedIn, Instagram, Behance, Dribble</div>
     </section>
-    <div>Like me on LinkedIn, Instagram, Behance, Dribble</div>
   </footer>
 </html>
