@@ -3,25 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registration Form</title>
   </head>
-  <body></body>
+  <body>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Main info</legend>
+        <label for="full_name">Full name:</label><br />
+        <input type="text" id="full_name" name="full_name" /><br />
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" /><br />
+        <label for="password">Password:</label><br />
+        <input type="text" id="password" name="password" /><br />
+        <label for="password_2nd">Password one more time:</label><br />
+        <input type="text" id="password_2nd" name="password_2nd" /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info</legend>
+
+        <p>Sex</p>
+        <label>
+          <input type="radio" id="male" name="Sex" value="male" checked /> male
+        </label>
+        <label>
+          <input type="radio" id="female" name="Sex" value="female" /> female
+        </label>
+
+        <div>
+          <label for="age">Age:</label><br />
+          <input type="text" id="age" name="age" /><br />
+        </div>
+        <div>
+          <p>Please text your full address:</p>
+          <textarea name="full_address" rows="5" cols="20">
+    Place for the address
+    </textarea
+          >
+        </div>
+      </fieldset>
+
+      <label for="course">Choose a course:</label>
+      <select id="course" name="course">
+        <option value="FE">Front-End</option>
+        <option value="BE">Back-End</option>
+        <option value="QA">QA Manual</option>
+        <option value="PM">Project management</option>
+      </select>
+      <div>
+        <input type="checkbox" id="pers_data" name="pers_data" value="data" />
+        <label for="pers_data">
+          I agree to the processing of personal data</label
+        >
+      </div>
+      <button type="reset" onclick="alert('clean')">Clean form</button>
+      <button type="submit" onclick="alert('Register')">Register</button>
+    </form>
+  </body>
 </html>
-
-<form>
-  <label for="full_name">Full name:</label><br />
-  <input type="text" id="full_name" name="full_name" /><br />
-  <label for="email">Email:</label><br />
-  <input type="text" id="email" name="email" /><br />
-  <label for="password">Password:</label><br />
-  <input type="text" id="password" name="password" /><br />
-  <label for="password_2nd">Password one more time:</label><br />
-  <input type="text" id="password_2nd" name="password_2nd" /><br />
-</form>
-
-<form>
-  <input type="radio" />
-  <div>male</div>
-  <input type="radio" />
-  <div>female</div>
-</form>
