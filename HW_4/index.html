@@ -4,60 +4,137 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <style>
+      .form-row {
+        margin-bottom: 10px;
+      }
+      .form-row .col-label {
+        display: inline-block;
+        width: 200px;
+      }
+      .form-row .col-field {
+        display: inline-block;
+        width: 300px;
+      }
+    </style>
   </head>
+
   <body>
     <form action="/action_page.php">
-      <fieldset>
-        <legend>Main info</legend>
-        <label for="full_name">Full name:</label><br />
-        <input type="text" id="full_name" name="full_name" /><br />
-        <label for="email">Email:</label><br />
-        <input type="text" id="email" name="email" /><br />
-        <label for="password">Password:</label><br />
-        <input type="text" id="password" name="password" /><br />
-        <label for="password_2nd">Password one more time:</label><br />
-        <input type="text" id="password_2nd" name="password_2nd" /><br />
-      </fieldset>
+      <div class="form-row">
+        <label class="col-label" for="full_name">Full name:</label>
+        <input
+          class="col-field"
+          type="text"
+          id="full_name"
+          name="full_name"
+          required />
+      </div>
 
-      <fieldset>
-        <legend>Additional info</legend>
+      <div class="form-row">
+        <label class="col-label" for="email">Email:</label>
+        <input
+          class="col-field"
+          type="email"
+          id="email"
+          name="email"
+          required />
+      </div>
 
-        <p>Sex</p>
-        <label>
-          <input type="radio" id="male" name="Sex" value="male" checked /> male
-        </label>
-        <label>
-          <input type="radio" id="female" name="Sex" value="female" /> female
-        </label>
+      <div class="form-row">
+        <label class="col-label" for="password">Password:</label>
+        <input
+          class="col-field"
+          type="password"
+          id="password"
+          name="password"
+          required />
+      </div>
 
-        <div>
-          <label for="age">Age:</label><br />
-          <input type="text" id="age" name="age" /><br />
+      <div class="form-row">
+        <label class="col-label" for="password_2nd"
+          >Password one more time:</label
+        >
+        <input
+          class="col-field"
+          type="password"
+          id="password_2nd"
+          name="password_2nd"
+          required />
+      </div>
+
+      <div class="form-row">
+        <span class="col-label">Gender</span>
+
+        <div class="col-field">
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            <span>Male</span>
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="female" required />
+            <span>Female</span>
+          </label>
         </div>
-        <div>
-          <p>Please text your full address:</p>
-          <textarea name="full_address" rows="5" cols="20">
-    Place for the address
-    </textarea
-          >
-        </div>
-      </fieldset>
+      </div>
 
-      <label for="course">Choose a course:</label>
-      <select id="course" name="course">
-        <option value="FE">Front-End</option>
-        <option value="BE">Back-End</option>
-        <option value="QA">QA Manual</option>
-        <option value="PM">Project management</option>
-      </select>
-      <div>
-        <input type="checkbox" id="pers_data" name="pers_data" value="data" />
+      <div class="form-row">
+        <label class="col-label" for="age">Age:</label>
+        <input
+          class="col-field"
+          type="number"
+          id="age"
+          name="age"
+          min="0"
+          max="110"
+          required />
+      </div>
+
+      <div class="form-row">
+        <label class="col-label" for="full_address"
+          >Please text your full address:</label
+        >
+        <textarea
+          required
+          placeholder="Country, region, city, street"
+          id="full_address"
+          name="full_address"
+          rows="5"
+          cols="20"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label class="col-label" for="course">Choose a course:</label>
+        <select class="col-field" id="course" name="course" required>
+          <option value="" disabled selected>Select your option</option>
+          <optgroup label="Tech courses">
+            <option value="FE">Front-End</option>
+            <option value="BE">Back-End</option>
+            <option value="QA">QA Manual</option>
+          </optgroup>
+          <optgroup label="Non-Tech courses">
+            <option value="PM">Project management</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <input
+          type="checkbox"
+          id="pers_data"
+          name="pers_data"
+          value="data"
+          required />
         <label for="pers_data">
           I agree to the processing of personal data</label
         >
       </div>
-      <button type="reset" onclick="alert('clean')">Clean form</button>
-      <button type="submit" onclick="alert('Register')">Register</button>
+
+      <div class="form-row">
+        <button type="reset">Clean form</button>
+        <button type="submit">Register</button>
+      </div>
     </form>
   </body>
 </html>
