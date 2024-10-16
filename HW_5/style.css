@@ -62,7 +62,8 @@ p {
   letter-spacing: 0.0225rem;
 }
 
-.navigation-link-active {
+.navigation-link:hover {
+  font-weight: bold;
   color: var(--color-black);
 }
 
