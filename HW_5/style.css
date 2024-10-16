@@ -108,6 +108,13 @@ p {
   gap: 25px;
   margin-bottom: 60px;
 }
+.social-media img {
+  transition: opacity 0.1s ease-in;
+}
+
+.social-media img:hover {
+  opacity: 0.5;
+}
 
 .persons-name {
   font-size: 3rem;
