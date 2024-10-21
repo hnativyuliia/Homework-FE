@@ -14,44 +14,133 @@
 
   <body>
     <header class="container">
-      <div class="logo">
-        <a href="#"><img src="assets/logo.svg" alt="logo" /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a class="main-menu" href="#">Product</a></li>
-          <li><a class="main-menu" href="#">Customers</a></li>
-          <li><a class="main-menu" href="#">Pricing</a></li>
-          <li><a class="main-menu" href="#">Resources</a></li>
-        </ul>
-      </nav>
-      <div class="buttons">
-        <button type="button" class="btn-white">Sign in</button>
-        <button type="button" class="btn">Sign up</button>
+      <div class="navigation-list">
+        <div class="logo">
+          <a href="#"><img src="assets/logo.svg" alt="logo" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a class="menu-link" href="#">Product</a></li>
+            <li><a class="menu-link" href="#">Customers</a></li>
+            <li><a class="menu-link" href="#">Pricing</a></li>
+            <li><a class="menu-link" href="#">Resources</a></li>
+          </ul>
+        </nav>
+        <div class="buttons">
+          <button type="button" class="btn btn-white">Sign in</button>
+          <button type="button" class="btn">Sign up</button>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="first-section">
+      <section>
         <div class="container">
-          <div class="content">
-            <h1>The Design Thinking superpowers</h1>
-            <div class="container-text">
-              <p class="text-section1">
+          <div class="hero">
+            <div>
+              <h1 class="hero-title">The Design Thinking superpowers</h1>
+              <p class="hero-description">
                 Tools, tutorials, design and innovation experts, all in one
                 place! The most intuitive way to imagine your next user
                 experience.
               </p>
+              <button type="button" class="btn">Get started</button>
             </div>
-            <button type="button" class="btn-large">Get started</button>
+
+            <img src="assets/first imafe.png" alt="people-image" />
           </div>
         </div>
+      </section>
 
-        <img
-          class="first-item-image"
-          src="assets/first imafe.png"
-          alt="people-image" />
+      <section class="tools">
+        <div class="container">
+          <div class="tools-title-container">
+            <h2 class="tools-title">We design tools to your superpowers</h2>
+          </div>
+
+          <ul class="list-tools">
+            <li class="tools-item">
+              <img class="tool-img" src="/HW_7/assets/cursor-card.png" alt="" />
+              <h3 class="tool-title">First click tests</h3>
+              <div class="tool-text">
+                While most people enjoy casino gambling,
+              </div>
+            </li>
+            <li class="tools-item">
+              <img class="tool-img" src="/HW_7/assets/symbol-card.png" alt="" />
+              <h3 class="tool-title">Design surveys</h3>
+              <div class="tool-text">
+                Sports betting, lottery and bingo playing for the fun
+              </div>
+            </li>
+            <li class="tools-item">
+              <img class="tool-img" src="/HW_7/assets/heart-card.png" alt="" />
+              <h3 class="tool-title">Preference tests</h3>
+              <div class="tool-text">
+                The Myspace page defines the individual.
+              </div>
+            </li>
+            <li class="tools-item">
+              <img class="tool-img" src="/HW_7/assets/clock-card.png" alt="" />
+              <h3 class="tool-title">Five second tests</h3>
+              <div class="tool-text">
+                Personal choices and the overall personality of the person.
+              </div>
+            </li>
+          </ul>
+
+          <div class="tools-btn-container">
+            <button type="button" class="btn">Sign up now</button>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div>
+            <img src="/HW_7/assets/logo.svg" alt="" />
+          </div>
+          <div>
+            <ul class="footer-lists">
+              <h4>Quick Links</h4>
+              <div class="footer-lists-items">
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contacts</li>
+                <li>FAQ</li>
+              </div>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="footer-lists">
+              <h4>Legal Stuff</h4>
+              <div class="footer-lists-items">
+                <li>Disclaimer</li>
+                <li>Financing</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+              </div>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="reg-block">
+              Knowing you're always on the best energy deal.
+            </h4>
+            <form>
+              <div class="form-row">
+                <label class="col-label" for="phone bumber"
+                  >Enter your phone number</label
+                >
+              </div>
+            </form>
+            <button type="submit" class="btn">Sign up now</button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
