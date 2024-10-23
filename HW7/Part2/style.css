@@ -1,134 +1,145 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --color-light-blue: #39c;
-  --color-border-blue: #2b81ac;
-  --color-agua: #3cc;
-  --color-purple: #969;
-  --color-white: white;
+  --color-white: #fff;
+  --color-blue: #3399cc;
+  --color-blue-dark: #2b81ac;
+  --color-green: #339966;
+  --color-green-dark: #669999;
+  --color-green-light: #99cc99;
+  --color-red: #c24747;
+  --color-cyan: #33cccc;
+  --color-purple: #996699;
+  --color-purple-dark: #666699;
+  --color-purple-light: #cc6699;
+  --color-orange: #e2674a;
+  --color-yellow: #ffcc66;
 }
+
 body {
-  width: min(90%, 1166px);
-  display: inline-block;
-  width: 1440px;
-  border: 25px solid #2b81ac;
-  background-color: var(--color-light-blue, #39c);
-  font-weight: 400;
-  padding-left: 137px;
+  margin: 0;
   font-family: "Lucida Sans Unicode";
+  color: var(--color-white);
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--color-blue);
+  border: 25px solid var(--color-blue-dark);
+  min-height: 100vh;
 }
 
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 1.3125rem;
-  margin: 66px 1081px 40px 135px;
-  margin-inline: auto;
-  color: var(--color-white, white);
-}
-
-h2 {
-  color: var(--color-white, white);
-  font-size: 1rem;
-  margin-top: 37px;
-}
-
-.cities {
-  width: 1170px;
-  height: 592px;
-  font-size: 0;
-  border: var(--color-white, white);
-  border: 2px solid white;
-}
-
-.cities li {
-  display: inline-block;
-  height: 147px;
-}
-
-div {
-  margin: 0, 17px, 19px;
-}
-li {
-  width: 74px;
-  height: 29px;
-  flex-shrink: 0;
-  color: var(--color-white, white);
-  text-align: center;
-  font-size: 1.375rem;
-  border: 2px solid;
-  padding: 26px, 40px;
-}
-
-.lisbon {
-  width: 50%;
-  background-color: #39c;
-}
-
-.paris {
-  width: 25%;
-  background-color: aqua;
-}
-.belgrade {
-  width: 25%;
-  background-color: #969;
-}
-
-.venice {
-  width: 25%;
-  background-color: #c24747;
-}
-
-.tel-aviv {
-  width: 25%;
-  background-color: #e2674a;
-}
-
-.cair {
-  width: 25%;
-  background-color: #ffcc66;
-}
-.new-york {
-  width: 25%;
-  background-color: #99cc99;
-}
-
-.new-delphi {
-  width: 25%;
-  background-color: #669999;
-}
-
-.sf {
-  width: 50%;
-  background-color: #cc6699;
-}
-.tokyo {
-  width: 25%;
-  background-color: #339966;
-}
-
-.sydney {
+.container {
+  max-width: 1166px;
   width: 100%;
-  background-color: #666699;
+  margin-inline: auto;
 }
 
-.container:hover li:not(:hover) {
+header h1 {
+  margin-block: 40px;
+}
+
+footer p {
+  margin-block: 40px;
+  font-size: 1rem;
+}
+
+.list {
+  font-size: 0;
+  border: 2px solid var(--color-white);
+}
+
+.list:hover .item:not(:hover) {
   opacity: 0.7;
-  transition: all 0.1s ease-in;
 }
 
-i {
+.item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.375rem;
+  height: 147px;
+  border: 2px solid;
+  width: 100%;
+  text-align: center;
+  transition: opacity 250ms ease-in;
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content > div:first-of-type {
+  margin-bottom: 4px;
+}
+
+.content i {
+  display: inline-block;
+  margin-left: 10px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 2.625rem;
+  vertical-align: middle;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.bg-cyan {
+  background-color: var(--color-cyan);
+}
+
+.bg-purple-light {
+  background-color: var(--color-purple-light);
+}
+
+.bg-purple-dark {
+  background-color: var(--color-purple-dark);
+}
+
+.bg-purple {
+  background-color: var(--color-purple);
+}
+
+.bg-red {
+  background-color: var(--color-red);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+.bg-green-light {
+  background-color: var(--color-green-light);
+}
+
+.bg-green-dark {
+  background-color: var(--color-green-dark);
+}
+
+.bg-green {
+  background-color: var(--color-green);
 }
