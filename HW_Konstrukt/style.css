@@ -1,0 +1,272 @@
+:root {
+  --layer-header: 100;
+  --header-height: 80px;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  padding-inline: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.header {
+  padding-block: 13px;
+  background-color: #fff;
+  position: sticky;
+  z-index: var(--layer-header);
+  top: 0;
+  min-height: var(--header-height);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.lang {
+  font-family: Tourney;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+  letter-spacing: 0.0825rem;
+}
+
+.nav {
+  font-family: Staatliches;
+  font-size: 1.375rem;
+  letter-spacing: 0.04125rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-left: auto;
+}
+
+.main {
+  padding-block: 70px;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+}
+
+.aside {
+  width: 390px;
+  flex: none;
+  position: relative;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 10px;
+  position: sticky;
+  top: var(--header-height);
+}
+
+.sidebar-item {
+  font-family: "Francois One";
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.heading {
+  font-family: "Francois One";
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+}
+
+.heading::before {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.heading-sup {
+  font-feature-settings: "sups" on;
+  font-family: Farro;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.075rem;
+  text-transform: none;
+  vertical-align: top;
+}
+
+.highlight {
+  background-color: lightgray;
+}
+
+.page-heading {
+  font-family: Roboto;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.09rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-heading::before {
+  width: 100px;
+  height: 8px;
+  background-color: #000;
+  display: block;
+  content: "";
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 180px;
+  gap: 30px;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 20px 15px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+
+  perspective: 1000px;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #e6e6e6;
+}
+
+.card-back {
+  background-color: #1a1a1a;
+  transform: rotateY(180deg);
+}
+
+.card-back .img {
+  filter: invert(1);
+}
